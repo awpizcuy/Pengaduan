@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for image modal */
+#imageModal .relative {
+    max-height: 90vh; /* Limit height to 90% of viewport height */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+/* Custom scrollbar hiding utility */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
